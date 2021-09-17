@@ -37,7 +37,7 @@ const Grid = () => {
   };
   //Console log the result on save
   const handleSave = () => {
-    console.log(points);
+    alert(JSON.stringify(points));
   };
 
   return (
