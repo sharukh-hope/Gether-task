@@ -8,7 +8,7 @@ const Point = (props) => {
           key={index}
           className="marker"
           style={{
-            left: `${point.x - 20}px`,
+            left: `${point.x - 7.5}px`,
             bottom: `${point.y - 9}px`,
           }}
         ></div>

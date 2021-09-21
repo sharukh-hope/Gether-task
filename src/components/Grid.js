@@ -32,10 +32,10 @@ const Grid = () => {
         y = -y + 100;
       } else y = (y - 100) * -1;
       points[name].push({
-        x: e.nativeEvent.offsetX - 100,
+        x: e.nativeEvent.offsetX - 100 - 12.5,
         y,
       });
-      console.log(e.nativeEvent.offsetX - 100);
+      console.log(e.nativeEvent.offsetX - 100 - 12.5);
       console.log(y);
       setPoints(points);
       setVis(false);
