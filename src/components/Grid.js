@@ -27,10 +27,16 @@ const Grid = () => {
   //Handle click on the grid
   const handleClick = (e, name) => {
     if (vis) {
+      let y = e.nativeEvent.offsetY;
+      if (y > 100) {
+        y = -y + 100;
+      } else y = (y - 100) * -1;
       points[name].push({
         x: e.nativeEvent.offsetX - 100,
-        y: e.nativeEvent.offsetY - 100,
+        y,
       });
+      console.log(e.nativeEvent.offsetX - 100);
+      console.log(y);
       setPoints(points);
       setVis(false);
     }

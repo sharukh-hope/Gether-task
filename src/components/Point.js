@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../stylesheets/grid.css";
 const Point = (props) => {
   if (props.points.length) {
     return props.points.map((point, index) => {
@@ -9,7 +9,7 @@ const Point = (props) => {
           className="marker"
           style={{
             left: `${point.x - 20}px`,
-            top: `${point.y - 10}px`,
+            bottom: `${point.y - 9}px`,
           }}
         ></div>
       );
